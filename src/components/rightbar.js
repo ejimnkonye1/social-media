@@ -83,18 +83,18 @@ function RightBar() {
       <div className="card shadow bg-white mt-3" style={{ width: '' }}>
         <div className="card-body">
           <h6 className="card-title">Latest Activities</h6>
-          <ul className="custom-activity-list">
+          <ul className="custom-activity-list list-unstyled">
   {/* Activity 1 */}
-  <li className="custom-activity-item align-items-center ">
-    <img src={img1} alt="Friend 1" className="custom-avatar" />
-    <div className="custom-activity-details">
+  <li className="custom-activity-item d-flex align-items-center ">
+    <img src={img1} alt="Friend 1" className="custom-avatar rounded-circle" />
+    <div className="custom-activity-details ">
       <span className="custom-friend-name">Friend 1</span> liked your post.
     </div>
   </li>
 
   {/* Activity 2 */}
-  <li className="custom-activity-item">
-    <img src={img1} alt="Friend 2" className="custom-avatar" />
+  <li className="custom-activity-item d-flex align-items-center">
+    <img src={img1} alt="Friend 2" className="custom-avatar rounded-circle" />
     <div className="custom-activity-details">
       <span className="custom-friend-name">Friend 2</span> commented on your photo.
     </div>
