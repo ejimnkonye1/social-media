@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/* .App{
+    background-color: rgb(155, 157, 157);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.containerss {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.left {
+  flex: 1;
+  margin-bottom: 500px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center {
+  flex: 2; 
+  text-align: center;
+
+
+
+}
+
+.right {
+  flex: 1;
+ 
+} */
+.order {
+  position: relative;
+  right: 6% !important;
+}
+.nav-item{
+  margin-left: 10px;
+}
+.media{
+  display: inline-block;
+}
+.media-body{
+  margin-left: 10px !important;
+}
+.small-circle-img {
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  object-fit: cover;
+}
+/* Add this CSS to your stylesheet */
+.online-badge {
+  width: 10px; /* Adjust the size of the badge */
+  height: 10px; /* Adjust the size of the badge */
+  border-radius: 50%;
+  background-color: #4CAF50; /* Green color for online status */
+  border: 2px solid #FFFFFF; /* White border for the badge */
+  display: inline-block;
+  margin-left: 5px !important;
+}
+.card-title{
+  text-wrap: nowrap;
+}
+/* Add this CSS to your stylesheet */
+.custom-avatar {
+  width: 15px;
+  height: 15px;
+  object-fit: cover;
+}
+
+.custom-friend-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Add a separator line between activities */
+.custom-activity-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Style the last activity without a separator line */
+.custom-activity-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Add this CSS to your stylesheet */
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.custom-friend-request-indicator {
+  width: 10px; /* Adjust the size of the indicator */
+  height: 10px; /* Adjust the size of the indicator */
+  border-radius: 50%;
+  background-color: #007bff; /* Blue color for friend request indicator */
+  border: 2px solid #fff; /* White border for the indicator */
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Add a separator line between friend requests */
+.custom-friend-request-item {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Style the last friend request without a separator line */
+.custom-friend-request-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.custom-friend-name {
+  font-weight:200;
+  margin-right: 5px;
+}
+.delete{
+  
+}
+.confirm{
+  position: relative;
+  right: 10%;
 }

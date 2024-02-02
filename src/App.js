@@ -1,23 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import HomePage from './components/Homepage';
+import Sidebar from './components/Sidebar';
+import Post from './components/Post';
+import FriendsPost from './components/FriendsPost';
+import RightBar from './components/rightbar';
+import img1 from './images/maul-4121e18d.webp'
+import './App.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+  <Header />
+  
+  {/* <div className="containerss">
+  <div className="left col-md-3">
+
+    <Sidebar />
+  </div>
+  <div className="center col-md-6" >
+
+    <HomePage />
+    
+  </div>
+  <div className="right col-md-3" >
+   
+     <RightBar />
+  </div>
+</div> */}
+<Sidebar />
+
+
+  
+ 
+   
     </div>
   );
 }
