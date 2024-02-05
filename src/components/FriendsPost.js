@@ -2,15 +2,15 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThumbsUp, faComment, faShare } from "@fortawesome/free-solid-svg-icons";
 import img1 from "../images/maul-4121e18d.webp"
-function FriendsPost(props) {
-  const { profileImage, friendName, postTime, postContent } = props;
+function FriendsPost({darkMode}) {
+  
 
   return (
     <section>
-  <div class="container profile">
+  <div class={`container profile${darkMode ? ' bg-dark' : ' bg-light'}`}>
     <div class="row">
         <div class="col-md-12">
-            <div class="card mb-3">
+            <div class={`card mb-3 ${darkMode ? ' bg-dark' : ' bg-light'}`}>
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" width="50" class="rounded-circle" /></a>
@@ -20,7 +20,7 @@ function FriendsPost(props) {
                         </div>
                     </div>
 
-                    <p>Best vacation of 2023</p>
+                    <p className="caption ">Best vacation of 2023</p>
                     <div class="profile-img-list">
                         <div class="profile-img-list-item main">
                             <a href="#" data-lity="" class="profile-img-list-link">
@@ -81,8 +81,8 @@ function FriendsPost(props) {
             </div>
         </div>
 
-        <div class="col-md-12">
-            <div class="card">
+        <div class="col-md-12gi">
+            <div class={`card  ${darkMode ? ' bg-dark' : ' bg-light'}`}>
                 <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
                         <a href="#"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="50" class="rounded-circle" /></a>

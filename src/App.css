@@ -52,6 +52,13 @@
   border: 2px solid #FFFFFF; /* White border for the badge */
   display: inline-block;
   margin-left: 5px !important;
+  position: relative;
+     left:   -45%;
+   
+}
+.friend-name{
+  position: relative;
+  left:-20%;
 }
 .card-title{
   text-wrap: nowrap;
@@ -66,6 +73,7 @@
 .custom-friend-name {
   font-weight: bold;
   margin-right: 5px;
+  
 }
 
 /* Add a separator line between activities */
@@ -117,19 +125,103 @@
   font-weight:200;
   margin-right: 5px;
 }
+.custom-activity {
+  margin: 5px;
+  margin-left: 9px;
+}
 .delete{
   
 }
 .confirm{
   position: relative;
-  right: 10%;
+  
+}
+.delete{
+  position: relative;
+  right:  30%;
 }
 
+/* .d-sm-inline{
+  color: black;
+} */
+.fixed-sidebar {
+  position: fixed;
+  top: 10%;
+  bottom: 0;
+ left: 0;
+  overflow: scroll;
+  width: 17%;
+ 
+}
+.fixed-right-sidebar{
+  position: fixed;
+  top: 12%;
+  bottom: 0;
+ 
+  overflow: scroll;
+}
+.fixed-header{
+  position: fixed;
+  top:0;
+  bottom: 0;
+}
+.center{
+  flex: 1;
+}
+/* Hide scrollbar for all browsers */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 0.1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.bg-darker{
+  color: white;
+  background-color: black;
+}
+.custom-friend-name
+
+{
+  color: #000;
+}
+.bg-dark .friend-name,.custom-friend-name{
+color: #fff;
+}
+.bg-dark .custom-friend-name{
+
+}
+.bg-dark .d-sm-inline,
+.text-dar,
 
 
+.card-title,
+.post-add
+{
+  color: white ;
+}
+.caption{
+  color: black;
+}
+.bg-dark .caption{
+  color: white;
+}
 
+.bg-white .text-dar{
+  color: black !important;
 
+}
+.post-ad{
+  color: black !important;
+}
 
+/* story css*/
 .widget {
   padding: 0;
   margin-top: 0;

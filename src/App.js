@@ -8,28 +8,15 @@ import FriendsPost from './components/FriendsPost';
 import RightBar from './components/rightbar';
 import img1 from './images/maul-4121e18d.webp'
 import './App.css'
+import { useTheme } from './Theme';
 function App() {
+  const { darkMode, toggleDarkMode } = useTheme();
   return (
     <div className="App">
       
-  <Header />
-  
-  {/* <div className="containerss">
-  <div className="left col-md-3">
+  <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-    <Sidebar />
-  </div>
-  <div className="center col-md-6" >
-
-    <HomePage />
-    
-  </div>
-  <div className="right col-md-3" >
-   
-     <RightBar />
-  </div>
-</div> */}
-<Sidebar />
+<Sidebar  darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
 
   

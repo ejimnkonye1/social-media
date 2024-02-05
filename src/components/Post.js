@@ -6,19 +6,20 @@ import {
   faUserTag,
 } from "@fortawesome/free-solid-svg-icons";
 import img1 from '../images/obi-21c40bfa.webp'
-function Post() {
+function Post({ darkMode, toggleDarkMode }) {
   return (
-    <div className="container-fluid mt-3">
+    <div className="container mt-3 mb-3">
       <div className="row">
-        <div className="col-md-8 offset-md-2">
-          <div className="card">
+        <div className="col-md-12 ">
+          <div className={`card  ${darkMode ? ' bg-dark' : ' bg-light'}`}>
             <div className="card-body">
               <div className="d-flex align-items-center border-bottom">
                 <img
-                  src={img1} // Replace with the URL of your profile picture
+                  src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                  width="50"  
                   alt="Profile Pic"
-                  className="rounded-circle profile-pic mr-3"
-                  style={{ width: '80px', height: '90px' }}
+                  className="rounded-circle profile-pic mr-3 mb-3"
+                  style={{ width: '80px', height: '70px' }}
                 />
                 
                 <input
@@ -29,14 +30,14 @@ function Post() {
                 />
               </div>
               <div className="d-flex justify-content-between mt-3">
-                <div className="mr-5" >
-                  <FontAwesomeIcon icon={faImage} className="" /> Add image
+                <div className="mr-5 post-ad text-primary" >
+                  <FontAwesomeIcon icon={faImage} className="post-ad text-primary " /> Add image
                   </div>
-                  <div>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} className="" /> Add location
+                  <div className="text-primary">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="text-primary" /> Add location
                   </div>
-                  <div>
-                  <FontAwesomeIcon icon={faUserTag} /> Tag Friends
+                  <div className="text-primary">
+                  <FontAwesomeIcon icon={faUserTag} className="text-primary" /> Tag Friends
                 </div>
                 <button className="btn btn-primary">Post</button>
               </div>
