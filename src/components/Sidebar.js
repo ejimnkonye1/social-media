@@ -13,6 +13,9 @@ import {
   faCalendar,
   faImages,
   faEnvelope,
+  faDashboard,
+  faFeed,
+  faDatabase
 
   } from '@fortawesome/free-solid-svg-icons';
   import img1 from '../images/luke-88288006.webp'
@@ -38,7 +41,7 @@ function Sidebar({ darkMode, toggleDarkMode }) {
   <img src='https://bootdey.com/img/Content/avatar/avatar1.png' alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
   <div className="media-body">
   
-    <span className="friend-name ml-3 text-dar  ">Luke</span>
+    <span className="friend-names ml-3 text-dar  ">Luke</span>
     
   </div>
 </li>
@@ -52,10 +55,10 @@ function Sidebar({ darkMode, toggleDarkMode }) {
                             <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline"><FontAwesomeIcon icon={faUsers} /> Groups</span> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="#gr" class="nav-link px-0"> <span class="d-none d-sm-inline">Football Arena</span> 1 </a>
+                                <a href="#gr" class="nav-link px-0"> <span class="d-none d-sm-inline">Football Arena</span> </a>
                             </li>
                             <li>
-                                <a href="#gr" class="nav-link px-0"> <span class="d-none d-sm-inline">Cruise Hq</span> 2 </a>
+                                <a href="#gr" class="nav-link px-0"> <span class="d-none d-sm-inline">Cruise Hq</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -101,22 +104,22 @@ function Sidebar({ darkMode, toggleDarkMode }) {
                     </li>
                     <li>
                         <a href="#gr" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faEnvelope} /> Messages
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faDashboard} /> Dashboard
 </span> </a>
                     </li>
                     <li>
                         <a href="#gr" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faEnvelope} /> Messages
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faFeed} /> Feed
 </span> </a>
                     </li>
                     <li>
                         <a href="#gr" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faEnvelope} /> Messages
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faPlayCircle} /> Media
 </span> </a>
                     </li>
                     <li>
-                        <a href="#gr" class="nav-link px-0 align-middle mb-5">
-                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faEnvelope} /> Messages
+                        <a href="#gr" class="nav-link px-0 align-middle mb-3">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">         <FontAwesomeIcon icon={faDatabase} /> Ads Manger
 </span> </a>
                     </li>
                 </ul>

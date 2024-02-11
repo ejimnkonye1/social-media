@@ -62,19 +62,26 @@ function Header({ darkMode, toggleDarkMode }) {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <a className="nav-link">
-              <FontAwesomeIcon icon={faUser} size="lg" className={`   ${darkMode ? 'text-white' : 'text-success'}`} />
+              <FontAwesomeIcon icon={faUser} size="lg" className= {`   ${darkMode ? 'text-white' : 'text-success'}`} />
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link">
-              <FontAwesomeIcon icon={faEnvelope} size="lg" className={`   ${darkMode ? 'text-white' : 'text-primary'}`} />
-            </a>
+          <a type="" class="nav-link position-relative">
+          <FontAwesomeIcon icon={faEnvelope} size="lg" className={`   ${darkMode ? 'text-white' : 'text-primary'}`} />
+  <span class="position-absolute top-1  start-95 translate-middle badge h-50 w-60 rounded-circle bg-danger">
+    10+
+    <span class="visually-hidden">unread messages</span>
+  </span>
+</a>
+            
           </li>
           <li className="nav-item">
             <a className="nav-link">
               <FontAwesomeIcon icon={faBell} size="lg" className={`   ${darkMode ? 'text-white' : 'text-danger'}`} />
+              
             </a>
           </li>
+          
           <li className="nav-item">
             <a className="nav-link">
             <img

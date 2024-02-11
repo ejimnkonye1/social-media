@@ -3,43 +3,8 @@ import img1 from '../images/ok.jpg'
 function RightBar({ darkMode, toggleDarkMode }) {
   return (
     <div className="sidebar-right ">
-      <div className={`card shadow   ${darkMode ? ' bg-dark' : ' bg-white'}`}>
-        <div className="card-body">
-          <h6 className={`card-title   ${darkMode ? 'text-white' : 'text-dark'}`}>Online Friends</h6>
-          <ul className="list-unstyled">
-            {/* Online Friend 1 */}
-            <li className="media d-flex align-items-center">
-  <img src={'https://bootdey.com/img/Content/avatar/avatar2.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
-  <div className="media-body">
-  <span className="online-badge mr-2"></span>
-    <span className="friend-name ml-3">John</span>
-    
-  </div>
-</li>
-
-            {/* Online Friend 2 */}
-            <li className="media d-flex align-items-center mt-2">
-  <img src={'https://bootdey.com/img/Content/avatar/avatar3.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
-  <div className="media-body">
-  <span className="online-badge mr-2"></span>
-    <span className="friend-name ml-3">Mike</span>
-   
-  </div>
-</li>
-<li className="media d-flex align-items-center mt-2">
-  <img src={'https://bootdey.com/img/Content/avatar/avatar4.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
-  <div className="media-body">
-  <span className="online-badge mr-2"></span>
-    <span className="friend-name ml-3">Lisa</span>
-  
-  </div>
-</li>
-            {/* Add more online friends as needed */}
-          </ul>
-        </div>
-      </div>
-
-      <div className={`card shadow  mt-2 ${darkMode ? ' bg-dark' : ' bg-white'}`}>
+     
+     <div className={`card shadow  mt-2 ${darkMode ? ' bg-dark' : ' bg-white'}`}>
         <div className="card-body">
           <h6 className={`card-title   ${darkMode ? 'text-white' : 'text-dark'}`}>Friends Request</h6>
           <ul className="custom-friend-request-list list-unstyled">
@@ -78,6 +43,48 @@ function RightBar({ darkMode, toggleDarkMode }) {
 
         </div>
       </div>
+      <div className={`card shadow mt-2  ${darkMode ? ' bg-dark' : ' bg-white'}`}>
+        <div className="card-body">
+          <h6 className={`card-title   ${darkMode ? 'text-white' : 'text-dark'}`}>Online Friends</h6>
+          <ul className="list-unstyled">
+            {/* Online Friend 1 */}
+            <li className="media d-flex align-items-center">
+  <img src={'https://bootdey.com/img/Content/avatar/avatar2.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
+  <div className="media-body">
+  <span className="online-badge mr-2"></span>
+    <span className="friend-name ml-3">John</span>
+    
+  </div>
+</li>
+
+            {/* Online Friend 2 */}
+            
+            
+            <li className="media d-flex align-items-center mt-2">
+  <img src={'https://bootdey.com/img/Content/avatar/avatar3.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
+  <div className="media-body">
+  <span className="online-badge mr-2"></span>
+    <span className="friend-name ">Mike</span>
+   
+  </div>
+</li>
+
+     
+            
+<li className="media d-flex align-items-center mt-2">
+  <img src={'https://bootdey.com/img/Content/avatar/avatar4.png'} alt="Online Friend 1" className="mr-3 rounded-circle small-circle-img" />
+  <div className="media-body">
+  <span className="online-badge lisa"></span>
+    <span className="friend-name ">Lisa</span>
+   
+  </div>
+</li>
+            {/* Add more online friends as needed */}
+          </ul>
+        </div>
+      </div>
+
+    
 
       {/* Latest Activities */}
       <div className={`card shadow  mt-3  ${darkMode ? ' bg-dark' : ' bg-white'}`}>
