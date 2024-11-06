@@ -5,7 +5,8 @@ import {
   faMapMarkerAlt,
   faUserTag,
 } from "@fortawesome/free-solid-svg-icons";
-import img1 from '../images/obi-21c40bfa.webp'
+
+
 function Post({ darkMode, toggleDarkMode }) {
   return (
     <div className="container mt-3 mb-3">

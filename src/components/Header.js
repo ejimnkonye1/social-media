@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faMoon, faSun, faUser,faEnvelope, faBell } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../Theme'; // Import the useTheme hook
-import Sidebar from "./Sidebar";
 
 function Header({ darkMode, toggleDarkMode }) {
   
-
-  // ... (the rest of your Header component)
 
   return (
     <div className="">
   <nav className={`navbar navbar-expand-lg fixed-top  " border-bottom ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-white'}`}>
     <div className="container-fluid">
-      <a className="navbar-brand">Billieconnect</a>
+      <a href="/" className="navbar-brand cursor">Billieconnect</a>
 
       <button
         className="navbar-toggler"
@@ -27,10 +23,10 @@ function Header({ darkMode, toggleDarkMode }) {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+      <div className="collapse navbar-collapse d-none d-sm-block" id="navbarNav">
+        <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="/">
               <FontAwesomeIcon icon={faHome}  className={`   ${darkMode ? 'text-white' : 'text-success'}`}/> 
             </a>
           </li>
@@ -61,12 +57,12 @@ function Header({ darkMode, toggleDarkMode }) {
 
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link">
+            <a className="nav-link" href="#/">
               <FontAwesomeIcon icon={faUser} size="lg" className= {`   ${darkMode ? 'text-white' : 'text-success'}`} />
             </a>
           </li>
           <li className="nav-item">
-          <a type="" class="nav-link position-relative">
+          <a type="" href="#l" class="nav-link position-relative">
           <FontAwesomeIcon icon={faEnvelope} size="lg" className={`   ${darkMode ? 'text-white' : 'text-primary'}`} />
   <span class="position-absolute top-1  start-95 translate-middle badge h-50 w-60 rounded-circle bg-danger">
     10+
@@ -76,14 +72,14 @@ function Header({ darkMode, toggleDarkMode }) {
             
           </li>
           <li className="nav-item">
-            <a className="nav-link">
+            <a className="nav-link" href="#l">
               <FontAwesomeIcon icon={faBell} size="lg" className={`   ${darkMode ? 'text-white' : 'text-danger'}`} />
               
             </a>
           </li>
           
           <li className="nav-item">
-            <a className="nav-link">
+            <a className="nav-link" href="#/">
             <img
               src="https://bootdey.com/img/Content/avatar/avatar1.png"
               alt="User"

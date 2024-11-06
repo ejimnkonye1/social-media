@@ -1,30 +1,4 @@
-/* .App{
-    background-color: rgb(155, 157, 157);
-}
-.containerss {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.left {
-  flex: 1;
-  margin-bottom: 500px;
-
-}
-
-.center {
-  flex: 2; 
-  text-align: center;
-
-
-
-}
-
-.right {
-  flex: 1;
- 
-} */
 .order {
   position: relative;
   right: 6% !important;
@@ -565,7 +539,9 @@ img.single-story-bg {
   left: 5%;
   margin-top: 10px;
 }
-
+.cursor{
+  cursor: pointer;
+}
 
 
 

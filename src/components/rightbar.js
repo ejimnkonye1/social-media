@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from '../images/ok.jpg'
+
 function RightBar({ darkMode, toggleDarkMode }) {
   return (
     <div className="sidebar-right ">
@@ -30,7 +30,7 @@ function RightBar({ darkMode, toggleDarkMode }) {
   <div className="custom-friend-request-details p-2 ">
     <div>
       <span className="custom-friend-request-indicator"></span>
-      <span className={`custom-friend-name ${darkMode ? 'text-white' : 'text-dark'}`}>Friend Request from User Jenni</span>
+      <span className={`custom-friend-name ${darkMode ? 'text-white' : 'text-dark'}`}>Friend Request from  Jenni</span>
     </div>
     <div className=" d-flex justify-content-between mt-2 ">
       <button className="btn btn-success btn-sm mr-2 confirm">Confirm</button>
@@ -79,7 +79,7 @@ function RightBar({ darkMode, toggleDarkMode }) {
    
   </div>
 </li>
-            {/* Add more online friends as needed */}
+           
           </ul>
         </div>
       </div>
